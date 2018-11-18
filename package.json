@@ -44,6 +44,7 @@
   ],
   "scripts": {
     "lint": "eslint index.js",
-    "prettier": "prettier --write '*.{js,json,css,md}'"
+    "prettier": "prettier --write '*.{js,json,css,md}'",
+    "test": "npm run lint"
   }
 }
