@@ -1,8 +1,8 @@
-# React-useScrollSpy
+# React-use-scrollspy
 
 ## Installation
 
-React-useScrollySpy requires React **0.17 or later.**
+React-use-scrollyspy requires React **0.17 or later.**
 
 ```js
 npm install --save react-use-scrollspy
