@@ -1,0 +1,46 @@
+{
+  "name": "react-use-scrollspy",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Patrick Puritscher <hello@patrickpuritscher.com>",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:Purii/react-use-scrollspy.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Purii/react-use-scrollspy/issues"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "lodash": "^4.17.11"
+  },
+  "peerDependencies": {
+    "react": "^16.7.0-alpha.2"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.9.0",
+    "eslint-config-prettier": "^3.3.0",
+    "eslint-plugin-prettier": "^3.0.0",
+    "eslint-plugin-react": "^7.11.1",
+    "eslint-plugin-react-hooks": "^0.0.0",
+    "husky": "^1.1.4",
+    "lint-staged": "^8.0.5",
+    "prettier": "^1.15.2"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,json,css,md}": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "scripts": {
+    "lint": "eslint index.js",
+    "prettier": "prettier --write '*.{js,json,css,md}'"
+  }
+}
