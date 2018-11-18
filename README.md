@@ -2,7 +2,7 @@
 
 ## Installation
 
-React-use-scrollyspy requires React **0.17 or later.**
+React-use-scrollyspy is a React _Hook_ which requires React **16.7.0-alpha or later.**
 
 ```js
 npm install --save react-use-scrollspy
