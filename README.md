@@ -3,7 +3,6 @@
 [![Build Status](https://travis-ci.org/Purii/react-use-scrollspy.svg?branch=master)](https://travis-ci.org/Purii/react-use-scrollspy)
 [![npm version](http://img.shields.io/npm/v/react-use-scrollspy.svg?style=flat)](https://www.npmjs.com/package/react-use-scrollspy)
 [![npm](https://img.shields.io/npm/dm/react-use-scrollspy.svg)](https://www.npmjs.com/package/react-use-scrollspy)
-[![Package Quality](http://npm.packagequality.com/shield/react-use-scrollspy.svg)](http://packagequality.com/#?package=react-use-scrollspy)
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/Purii/react-use-scrollspy/master/LICENSE)
 [![Donate](https://img.shields.io/badge/Donate-Patreon-green.svg)](https://www.patreon.com/purii)
 
