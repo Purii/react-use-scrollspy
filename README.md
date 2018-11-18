@@ -1,26 +1,49 @@
-# React-use-scrollspy
+# react-use-scrollspy
+
+[![Build Status](https://travis-ci.org/Purii/react-use-scrollspy.svg?branch=master)](https://travis-ci.org/Purii/react-use-scrollspy)
+[![npm version](http://img.shields.io/npm/v/react-use-scrollspy.svg?style=flat)](https://www.npmjs.com/package/react-use-scrollspy)
+[![npm](https://img.shields.io/npm/dm/react-use-scrollspy.svg)](https://www.npmjs.com/package/react-use-scrollspy)
+[![Package Quality](http://npm.packagequality.com/shield/react-use-scrollspy.svg)](http://packagequality.com/#?package=react-use-scrollspy)
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/Purii/react-use-scrollspy/master/LICENSE)
+[![Donate](https://img.shields.io/badge/Donate-Patreon-green.svg)](https://www.patreon.com/purii)
+
+> ⚠️ Heads up: `React Hooks` are not part of a stable React release yet. ⚠️
 
 ## Installation
 
-React-use-scrollyspy is a React _Hook_ which requires React **16.7.0-alpha or later.**
+`React-use-scrollyspy` is a React `Hook` which requires React **16.7.0-alpha or later.**
 
-```js
-npm install --save react-use-scrollspy
+```sh
+// yarn
+yarn add react-use-scrollspy
+// or npm
+npm i react-use-scrollspy --S
 ```
 
 ## Usage
 
-| Parameter       | Default |       Type        | Description                               |
-| :-------------- | :-----: | :---------------: | ----------------------------------------- |
-| defaultValue    |   `0`   |       `int`       | Default value that is returned (optional) |
-| offsetPx        |   `0`   |       `int`       | Set offset (optional)                     |
-| sectionElements |  `[]`   | `[(DOM) Element]` | Array of DOM elements to observe          |
+```javascript
+import useScrollSpy from 'react-use-scrollspy';
+...
+const activeSection = useScrollSpy({
+  sectionElements: [], // Array of DOM elements
+});
+```
+
+| Parameter       | Default |       Type        | Description                                             |
+| :-------------- | :-----: | :---------------: | --------------------------------------------------------|
+| defaultValue    |   `0`   |       `int`       | Default value that is returned (optional)               |
+| offsetPx        |   `0`   |       `int`       | Set offset (optional)                                   |
+| sectionElements |  `[]`   | `[(DOM) Element]` | Array of DOM elements to observe (e.g. via React `refs`)|
 
 ### with Refs
 
 Use React `refs` for section elements like in the [provided example](/example).
 
 ```javascript
+import React, { useRef } from 'react';
+import useScrollSpy from 'react-use-scrollspy';
+
 const App = () => {
 
   const sectionRefs = [
