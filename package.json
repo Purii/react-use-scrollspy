@@ -39,6 +39,9 @@
       "git add"
     ]
   },
+  "files": [
+    "index.js"
+  ],
   "scripts": {
     "lint": "eslint index.js",
     "prettier": "prettier --write '*.{js,json,css,md}'"
