@@ -9,6 +9,8 @@
 
 > ⚠️ Heads up: `React Hooks` are not part of a stable React release yet. ⚠️
 
+![Example](example.gif)
+
 ## Installation
 
 `React-use-scrollyspy` is a React `Hook` which requires React **16.7.0-alpha or later.**
