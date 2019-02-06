@@ -25,15 +25,15 @@ npm i react-use-scrollspy --S
 import useScrollSpy from 'react-use-scrollspy';
 ...
 const activeSection = useScrollSpy({
-  sectionElements: [], // Array of DOM elements
+  sectionElementRefs: [], // Array of References to DOM elements
 });
 ```
 
-| Parameter       | Default |       Type        | Description                                              |
-| :-------------- | :-----: | :---------------: | -------------------------------------------------------- |
-| defaultValue    |   `0`   |       `int`       | Default value that is returned (optional)                |
-| offsetPx        |   `0`   |       `int`       | Set offset (optional)                                    |
-| sectionElements |  `[]`   | `[(DOM) Element]` | Array of DOM elements to observe (e.g. via React `refs`) |
+| Parameter          | Default |  Type   | Description                                      |
+| :----------------- | :-----: | :-----: | ------------------------------------------------ |
+| defaultValue       |   `0`   |  `int`  | Default value that is returned (optional)        |
+| offsetPx           |   `0`   |  `int`  | Set offset (optional)                            |
+| sectionElementRefs |  `[]`   | `[Ref]` | Array of Refs to observe (e.g. via React `refs`) |
 
 ### with Refs
 
@@ -52,7 +52,7 @@ const App = () => {
   ];
 
   const activeSection = useScrollSpy({
-    sectionElements: sectionRefs.map(ref => ref.current),
+    sectionElementRefs: sectionRefs,
     offsetPx: -80,
   });
 
@@ -74,7 +74,3 @@ const App = () => {
     </section>
   )
 ```
-
-### with `Document.querySelectorAll()`
-
-...Todo

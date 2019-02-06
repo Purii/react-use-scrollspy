@@ -8,7 +8,7 @@ const App = () => {
   const sectionRefs = [useRef(null), useRef(null), useRef(null)];
 
   const activeSection = useScrollSpy({
-    sectionElements: sectionRefs.map(ref => ref.current),
+    sectionElements: sectionRefs,
     offsetPx: -80,
   });
 
