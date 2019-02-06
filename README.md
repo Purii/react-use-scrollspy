@@ -6,13 +6,11 @@
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/Purii/react-use-scrollspy/master/LICENSE)
 [![Donate](https://img.shields.io/badge/Donate-Patreon-green.svg)](https://www.patreon.com/purii)
 
-> ⚠️ Heads up: `React Hooks` are not part of a stable React release yet. ⚠️
-
 ![Example](example.gif)
 
 ## Installation
 
-`react-use-scrollyspy` is a React `Hook` which requires React **16.7.0-alpha or later.**
+`react-use-scrollyspy` is a React `Hook` which requires React **16.8.0 or later.**
 
 ```sh
 // yarn
@@ -31,11 +29,11 @@ const activeSection = useScrollSpy({
 });
 ```
 
-| Parameter       | Default |       Type        | Description                                             |
-| :-------------- | :-----: | :---------------: | --------------------------------------------------------|
-| defaultValue    |   `0`   |       `int`       | Default value that is returned (optional)               |
-| offsetPx        |   `0`   |       `int`       | Set offset (optional)                                   |
-| sectionElements |  `[]`   | `[(DOM) Element]` | Array of DOM elements to observe (e.g. via React `refs`)|
+| Parameter       | Default |       Type        | Description                                              |
+| :-------------- | :-----: | :---------------: | -------------------------------------------------------- |
+| defaultValue    |   `0`   |       `int`       | Default value that is returned (optional)                |
+| offsetPx        |   `0`   |       `int`       | Set offset (optional)                                    |
+| sectionElements |  `[]`   | `[(DOM) Element]` | Array of DOM elements to observe (e.g. via React `refs`) |
 
 ### with Refs
 
