@@ -52,7 +52,7 @@
     "eslint-plugin-react-hooks": "^3.0.0",
     "gh-pages": "^2.2.0",
     "husky": "^4.2.5",
-    "lint-staged": "^10.1.3",
+    "lint-staged": "^10.1.6",
     "prettier": "^2.0.4"
   }
 }
