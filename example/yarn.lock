@@ -9517,12 +9517,12 @@ react-scripts@4.0.1:
   optionalDependencies:
     fsevents "^2.1.3"
 
-react-use-scrollspy@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/react-use-scrollspy/-/react-use-scrollspy-2.0.0.tgz#757be2ad005ab256e0984a9959bda00c250307c7"
-  integrity sha512-pNXG/F+7LnrVB7PsscsGdTLagZBhmjLlGoaw9wwsO7r8sFraxceOc5Zsqs6XXQYazslUa4olhMXtcvkHz9KumQ==
+react-use-scrollspy@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/react-use-scrollspy/-/react-use-scrollspy-2.0.1.tgz#fac1a9ae017d6ef9d1282406d046aa5bafcaf072"
+  integrity sha512-dg+WBSNYQ/NIrhwdnuaWsFVX/Y9LqldaDRa1WyxQfOGHvDawLgfwpcLN7pQFmVLebbvJ0I4zUxbQxWiTN4r4Xw==
   dependencies:
-    lodash "^4.17.11"
+    lodash "^4.17.20"
 
 react@^17.0.1:
   version "17.0.1"
