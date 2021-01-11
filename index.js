@@ -30,6 +30,9 @@ export default ({
   useEffect(() => {
     window.addEventListener('scroll', handle);
 
+    // Run initially
+    handle();
+
     return () => {
       window.removeEventListener('scroll', handle);
     };
