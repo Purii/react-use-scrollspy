@@ -1,12 +1,18 @@
-import { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import throttle from 'lodash/fp/throttle';
 
+export interface useScrollSpyParams {
+  activeSectionDefault: number,
+  offsetPx: number,
+  sectionElementRefs: React.RefObject<HTMLElement>[],
+  throttleMs: number,
+}
 export default ({
   activeSectionDefault = 0,
   offsetPx = 0,
   sectionElementRefs = [],
   throttleMs = 100,
-}) => {
+}: useScrollSpyParams ) => {
   const [activeSection, setActiveSection] = useState(activeSectionDefault);
 
   const handle = throttle(throttleMs, () => {

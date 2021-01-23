@@ -1,7 +1,6 @@
 {
   "name": "react-use-scrollspy",
   "version": "2.0.1",
-  "main": "index.js",
   "author": "Patrick Puritscher <hello@patrickpuritscher.com>",
   "homepage": "https://purii.github.io/react-use-scrollspy",
   "description": "Flexible React Hook to automatically update navigation based on scroll position",
@@ -14,45 +13,54 @@
     "url": "https://github.com/Purii/react-use-scrollspy/issues"
   },
   "scripts": {
-    "example:predeploy": "cd example && npm run build",
+    "example:predeploy": "cd example && yarn build",
     "example:deploy": "gh-pages -d example/build",
-    "lint": "eslint index.js",
-    "format": "prettier --write '**/*.{js,json,css,md}'",
-    "test": "npm run lint"
+    "eslint:ci": "eslint ./src/ --ext .js,.jsx,.tsx,.ts -f table",
+    "eslint:fix": "eslint ./src/ --fix --ext .js,.jsx,.tsx,.ts -f table",
+    "test": "yarn run eslint:ci && yarn tsc --noEmit",
+    "tsc": "tsc --skipLibCheck",
+    "build:module": "yarn tsc --outDir ./lib/module  --sourceMap",
+    "build:commonjs": "yarn tsc --module commonjs --outDir ./lib/commonjs --sourceMap",
+    "build": "rimraf ./lib && yarn build:module && yarn build:commonjs",
+    "release:prepare": "yarn build",
+    "release": "standard-version"
   },
-  "husky": {
-    "hooks": {}
-  },
-  "lint-staged": {
-    "*.js": [
-      "npm run lint",
-      "prettier --write",
-      "git add"
-    ],
-    "*.{json,css,md}": [
-      "prettier --write",
-      "git add"
-    ]
-  },
+  "main": "lib/commonjs/index.js",
+  "module": "lib/module/index.js",
+  "types": "lib/typescript/index.d.ts",
   "files": [
-    "index.js"
+    "/src",
+    "/lib",
+    "/README.md",
+    "/LICENSE"
   ],
   "dependencies": {
-    "lodash": "^4.17.20"
+    "lodash": "4.17.20"
   },
   "peerDependencies": {
-    "react": "^16.8.6"
+    "react": "^16.8.6 || 17"
   },
   "devDependencies": {
+    "@types/lodash": "^4.14.168",
+    "@types/react": "^17.0.0",
     "babel-eslint": "^10.1.0",
-    "eslint": "^7.17.0",
-    "eslint-config-prettier": "^7.1.0",
+    "cz-conventional-changelog": "3.3.0",
+    "eslint": "^7.18.0",
+    "eslint-config-prettier": "^7.2.0",
     "eslint-plugin-prettier": "^3.3.1",
     "eslint-plugin-react": "^7.22.0",
     "eslint-plugin-react-hooks": "^4.2.0",
     "gh-pages": "^3.1.0",
-    "husky": "^4.3.7",
+    "husky": "^4.3.8",
     "lint-staged": "^10.5.3",
-    "prettier": "^2.2.1"
+    "prettier": "^2.2.1",
+    "rimraf": "^3.0.2",
+    "standard-version": "^9.1.0",
+    "typescript": "^4.1.3"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
