@@ -4,7 +4,6 @@ All notable changes to this project will be documented in this file. See [standa
 
 ## 3.0.0 (2021-01-23)
 
+### Breaking Changes
 
-### Bug Fixes
-
-* run initially (fix [#161](https://github.com/Purii/react-use-scrollspy/issues/161)) ([344eb3c](https://github.com/Purii/react-use-scrollspy/commit/344eb3cb0b92ab4dc0699fa2d9fb5d733e15ceee))
+* migrate to TS ([344eb3c](https://github.com/Purii/react-use-scrollspy/commit/06e6b6c1e499ab5dab8c13e9135f53e770e2fce5))
