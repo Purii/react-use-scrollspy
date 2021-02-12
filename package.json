@@ -13,8 +13,6 @@
     "url": "https://github.com/Purii/react-use-scrollspy/issues"
   },
   "scripts": {
-    "example:predeploy": "cd example && yarn build",
-    "example:deploy": "gh-pages -d example/build",
     "eslint:ci": "eslint ./src/ --ext .js,.jsx,.tsx,.ts -f table",
     "eslint:fix": "eslint ./src/ --fix --ext .js,.jsx,.tsx,.ts -f table",
     "test": "yarn run eslint:ci && yarn tsc --noEmit",
@@ -50,8 +48,7 @@
     "eslint-plugin-prettier": "^3.3.1",
     "eslint-plugin-react": "^7.22.0",
     "eslint-plugin-react-hooks": "^4.2.0",
-    "gh-pages": "^3.1.0",
-    "husky": "^4.3.8",
+    "husky": "^5.0.9",
     "lint-staged": "^10.5.3",
     "prettier": "^2.2.1",
     "rimraf": "^3.0.2",
