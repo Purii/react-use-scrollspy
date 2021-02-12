@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/react-use-scrollspy/static/css/main.d8e7033e.chunk.css",
+    "main.js": "/react-use-scrollspy/static/js/main.180f990b.chunk.js",
+    "main.js.map": "/react-use-scrollspy/static/js/main.180f990b.chunk.js.map",
+    "runtime-main.js": "/react-use-scrollspy/static/js/runtime-main.0bbe6f71.js",
+    "runtime-main.js.map": "/react-use-scrollspy/static/js/runtime-main.0bbe6f71.js.map",
+    "static/js/2.93be6ba0.chunk.js": "/react-use-scrollspy/static/js/2.93be6ba0.chunk.js",
+    "static/js/2.93be6ba0.chunk.js.map": "/react-use-scrollspy/static/js/2.93be6ba0.chunk.js.map",
+    "static/js/3.9955bc24.chunk.js": "/react-use-scrollspy/static/js/3.9955bc24.chunk.js",
+    "static/js/3.9955bc24.chunk.js.map": "/react-use-scrollspy/static/js/3.9955bc24.chunk.js.map",
+    "index.html": "/react-use-scrollspy/index.html",
+    "static/css/main.d8e7033e.chunk.css.map": "/react-use-scrollspy/static/css/main.d8e7033e.chunk.css.map",
+    "static/js/2.93be6ba0.chunk.js.LICENSE.txt": "/react-use-scrollspy/static/js/2.93be6ba0.chunk.js.LICENSE.txt",
+    "static/media/logo.6ce24c58.svg": "/react-use-scrollspy/static/media/logo.6ce24c58.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.0bbe6f71.js",
+    "static/js/2.93be6ba0.chunk.js",
+    "static/css/main.d8e7033e.chunk.css",
+    "static/js/main.180f990b.chunk.js"
+  ]
+}
