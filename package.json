@@ -1,6 +1,6 @@
 {
   "name": "react-use-scrollspy",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "author": "Patrick Puritscher <hello@patrickpuritscher.com>",
   "homepage": "https://purii.github.io/react-use-scrollspy",
   "description": "Flexible React Hook to automatically update navigation based on scroll position",
