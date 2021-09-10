@@ -4,10 +4,13 @@
   "extends": [
     "eslint:recommended",
     "plugin:react/recommended",
-    "prettier",
-    "prettier/react"
+    "prettier"
   ],
-  "plugins": ["react", "prettier", "react-hooks"],
+  "plugins": [
+    "react",
+    "prettier",
+    "react-hooks"
+  ],
   "rules": {
     "react-hooks/rules-of-hooks": "error"
   },
