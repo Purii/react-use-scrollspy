@@ -10,7 +10,7 @@
 
 ## Installation
 
-`react-use-scrollyspy` is a React `Hook` which requires React **16.8.0 or later.**
+`react-use-scrollspy` is a React `Hook` which requires React **16.8.0 or later.**
 
 ```sh
 // yarn
