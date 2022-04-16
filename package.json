@@ -36,24 +36,24 @@
     "lodash": "4.17.21"
   },
   "peerDependencies": {
-    "react": "^16.8.6 || 17 || 18"
+    "react": ">=16.8.6"
   },
   "devDependencies": {
-    "@types/lodash": "^4.14.172",
-    "@types/react": "^17.0.20",
-    "babel-eslint": "^10.1.0",
+    "@types/lodash": "4.14.181",
+    "@types/react": "18.0.5",
+    "babel-eslint": "10.1.0",
     "cz-conventional-changelog": "3.3.0",
-    "eslint": "^7.32.0",
-    "eslint-config-prettier": "^8.3.0",
-    "eslint-plugin-prettier": "^4.0.0",
-    "eslint-plugin-react": "^7.25.1",
-    "eslint-plugin-react-hooks": "^4.2.0",
-    "husky": "^7.0.2",
-    "lint-staged": "^11.1.2",
-    "prettier": "^2.4.0",
-    "rimraf": "^3.0.2",
-    "standard-version": "^9.3.1",
-    "typescript": "^4.4.2"
+    "eslint": "8.13.0",
+    "eslint-config-prettier": "8.5.0",
+    "eslint-plugin-prettier": "4.0.0",
+    "eslint-plugin-react": "7.29.4",
+    "eslint-plugin-react-hooks": "4.4.0",
+    "husky": "7.0.4",
+    "lint-staged": "12.3.8",
+    "prettier": "2.6.2",
+    "rimraf": "3.0.2",
+    "standard-version": "9.3.2",
+    "typescript": "4.6.3"
   },
   "config": {
     "commitizen": {
