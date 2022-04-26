@@ -40,7 +40,7 @@
   },
   "devDependencies": {
     "@types/lodash": "4.14.181",
-    "@types/react": "18.0.5",
+    "@types/react": "18.0.7",
     "babel-eslint": "10.1.0",
     "cz-conventional-changelog": "3.3.0",
     "eslint": "8.13.0",
