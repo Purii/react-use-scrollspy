@@ -43,5 +43,5 @@ export default ({
       window.removeEventListener('scroll', handle);
     };
   }, [sectionElementRefs, offsetPx]);
-  return activeSection;
+  return [activeSection, setActiveSection];
 };
