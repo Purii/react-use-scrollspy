@@ -29,11 +29,12 @@ const activeSection = useScrollSpy({
 });
 ```
 
-| Parameter          | Default |  Type   | Description                                      |
-| :----------------- | :-----: | :-----: | ------------------------------------------------ |
-| defaultValue       |   `0`   |  `int`  | Default value that is returned (optional)        |
-| offsetPx           |   `0`   |  `int`  | Set offset (optional)                            |
-| sectionElementRefs |  `[]`   | `[Ref]` | Array of Refs to observe (e.g. via React `refs`) |
+| Parameter          | Default   |  Type   | Description                                                 |
+| :----------------- | :--------:| :------:| ------------------------------------------------------------|
+| defaultValue       |   `0`     |  `int`  | Default value that is returned (optional)                   |
+| offsetPx           |   `0`     |  `int`  | Set offset (optional)                                       |
+| sectionElementRefs |  `[]`     | `[Ref]` | Array of Refs to observe (e.g. via React `refs`)            |
+| scrollingElement   |  `window` |  `Ref`  | Target of the scrolling (e.g. via React `refs`)) (optional) |
 
 ### with Refs
 
