@@ -6,10 +6,12 @@ export interface useScrollSpyParams {
   offsetPx?: number,
   sectionElementRefs: React.RefObject<HTMLElement>[],
   throttleMs?: number,
+  scrollingElement?:React.RefObject<HTMLElement>,
 }
 export default ({
   activeSectionDefault = 0,
   offsetPx = 0,
+  scrollingElement = window,
   sectionElementRefs = [],
   throttleMs = 100,
 }: useScrollSpyParams ) => {
@@ -22,6 +24,7 @@ export default ({
       // Needs to be a valid DOM Element
       if (!section || !(section instanceof Element)) continue;
       // GetBoundingClientRect returns values relative to viewport
+      section.addEventListener
       if (section.getBoundingClientRect().top + offsetPx < 0) {
         currentSectionId = i;
         continue;
@@ -34,13 +37,13 @@ export default ({
   });
 
   useEffect(() => {
-    window.addEventListener('scroll', handle);
+    scrollingElement.addEventListener('scroll', handle);
 
     // Run initially
     handle();
 
     return () => {
-      window.removeEventListener('scroll', handle);
+      scrollingElement.removeEventListener('scroll', handle);
     };
   }, [sectionElementRefs, offsetPx]);
   return activeSection;
