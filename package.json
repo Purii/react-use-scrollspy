@@ -1,7 +1,7 @@
 {
   "name": "react-use-scrollspy",
   "version": "3.0.2",
-  "author": "Patrick Puritscher <hello@patrickpuritscher.com>",
+  "author": "Patrick Böder <hello@patrickpuritscher.com>",
   "homepage": "https://purii.github.io/react-use-scrollspy",
   "description": "Flexible React Hook to automatically update navigation based on scroll position",
   "license": "MIT",
@@ -39,21 +39,21 @@
     "react": ">=16.8.6"
   },
   "devDependencies": {
-    "@types/lodash": "4.14.181",
-    "@types/react": "18.0.5",
+    "@types/lodash": "4.14.186",
+    "@types/react": "18.0.21",
     "babel-eslint": "10.1.0",
     "cz-conventional-changelog": "3.3.0",
-    "eslint": "8.13.0",
+    "eslint": "8.25.0",
     "eslint-config-prettier": "8.5.0",
-    "eslint-plugin-prettier": "4.0.0",
-    "eslint-plugin-react": "7.29.4",
-    "eslint-plugin-react-hooks": "4.4.0",
-    "husky": "7.0.4",
-    "lint-staged": "12.3.8",
-    "prettier": "2.6.2",
+    "eslint-plugin-prettier": "4.2.1",
+    "eslint-plugin-react": "7.31.8",
+    "eslint-plugin-react-hooks": "4.6.0",
+    "husky": "8.0.1",
+    "lint-staged": "13.0.3",
+    "prettier": "2.7.1",
     "rimraf": "3.0.2",
-    "standard-version": "9.3.2",
-    "typescript": "4.6.3"
+    "standard-version": "9.5.0",
+    "typescript": "4.8.4"
   },
   "config": {
     "commitizen": {
