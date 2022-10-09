@@ -6,10 +6,12 @@ export interface useScrollSpyParams {
   offsetPx?: number,
   sectionElementRefs: React.RefObject<HTMLElement>[],
   throttleMs?: number,
+  scrollingElement?:React.RefObject<HTMLElement>,
 }
 export default ({
   activeSectionDefault = 0,
   offsetPx = 0,
+  scrollingElement = null,
   sectionElementRefs = [],
   throttleMs = 100,
 }: useScrollSpyParams ) => {
@@ -34,13 +36,17 @@ export default ({
   });
 
   useEffect(() => {
-    window.addEventListener('scroll', handle);
+    const scrollable = scrollingElement?.current 
+      ? scrollingElement.current 
+      : window
+
+      scrollable.addEventListener('scroll', handle);
 
     // Run initially
     handle();
 
     return () => {
-      window.removeEventListener('scroll', handle);
+      scrollable.removeEventListener('scroll', handle);
     };
   }, [sectionElementRefs, offsetPx]);
   return activeSection;
