@@ -26,6 +26,10 @@ DerivedData
 *.xcuserstate
 project.xcworkspace
 
+# Intellij
+#
+.idea
+
 # node.js
 #
 node_modules/
@@ -33,3 +37,9 @@ npm-debug.log
 
 # Build
 lib/
+
+# Yarn berry with node modules linker
+.yarn/*
+!.yarn/releases
+!.yarn/plugins
+.pnp.*
