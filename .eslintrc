@@ -1,34 +1,11 @@
 {
-  "parser": "babel-eslint",
-  "root": true,
-  "extends": [
-    "eslint:recommended",
-    "plugin:react/recommended",
-    "prettier"
-  ],
-  "plugins": [
-    "react",
-    "prettier",
-    "react-hooks"
-  ],
-  "rules": {
-    "react-hooks/rules-of-hooks": "error"
-  },
-  "env": {
-    "es6": true,
-    "browser": true,
-    "node": true
-  },
+  "extends": "@porscheofficial/eslint-config-porschedigital-react",
   "parserOptions": {
-    "ecmaVersion": 9,
-    "sourceType": "module",
-    "ecmaFeatures": {
-      "jsx": true
-    }
+    "project": "./tsconfig.json"
   },
-  "settings": {
-    "react": {
-      "version": "16.7.0"
-    }
+  "rules": {
+    "import/no-default-export": "off",
+    "@typescript-eslint/no-magic-numbers": "off",
+    "no-continue": "off"
   }
 }

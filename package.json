@@ -13,8 +13,10 @@
     "url": "https://github.com/Purii/react-use-scrollspy/issues"
   },
   "scripts": {
-    "eslint:ci": "eslint ./src/ --ext .js,.jsx,.tsx,.ts -f table",
-    "eslint:fix": "eslint ./src/ --fix --ext .js,.jsx,.tsx,.ts -f table",
+    "eslint:ci": "eslint src/ --ext .js,.jsx,.tsx,.ts -f stylish",
+    "eslint:fix": "eslint src/ --fix --ext .js,.jsx,.tsx,.ts  -f stylish --quiet",
+    "prettier:ci": "prettier --check ./",
+    "prettier:fix": "prettier --write ./",
     "test": "yarn run eslint:ci && yarn tsc --noEmit",
     "tsc": "tsc --skipLibCheck",
     "build:module": "yarn tsc --outDir ./lib/module  --sourceMap",
@@ -32,6 +34,7 @@
     "/README.md",
     "/LICENSE"
   ],
+  "prettier": "@porscheofficial/prettier-config-porschedigital",
   "dependencies": {
     "lodash": "4.17.21"
   },
@@ -39,18 +42,17 @@
     "react": ">=16.8.6"
   },
   "devDependencies": {
+    "@porscheofficial/eslint-config-porschedigital-react": "2.1.0",
+    "@porscheofficial/prettier-config-porschedigital": "2.1.0",
     "@types/lodash": "4.14.186",
     "@types/react": "18.0.21",
     "babel-eslint": "10.1.0",
     "cz-conventional-changelog": "3.3.0",
     "eslint": "8.25.0",
-    "eslint-config-prettier": "8.5.0",
-    "eslint-plugin-prettier": "4.2.1",
-    "eslint-plugin-react": "7.31.8",
-    "eslint-plugin-react-hooks": "4.6.0",
     "husky": "8.0.1",
     "lint-staged": "13.0.3",
     "prettier": "2.7.1",
+    "react": "18.2.0",
     "rimraf": "3.0.2",
     "standard-version": "9.5.0",
     "typescript": "4.8.4"
