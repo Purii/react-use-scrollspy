@@ -23,3 +23,9 @@ yarn-debug.log*
 yarn-error.log*
 
 .eslintcache
+
+# Yarn berry with node modules linker
+.yarn/*
+!.yarn/releases
+!.yarn/plugins
+.pnp.*
