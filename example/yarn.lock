@@ -5863,7 +5863,7 @@ __metadata:
     react: ^18.2.0
     react-dom: ^18.2.0
     react-scripts: 5.0.1
-    react-use-scrollspy: 3.1.0
+    react-use-scrollspy: 3.1.1
     typescript: ^4.8.4
     web-vitals: ^3.0.3
   languageName: unknown
@@ -10522,14 +10522,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-use-scrollspy@npm:3.1.0":
-  version: 3.1.0
-  resolution: "react-use-scrollspy@npm:3.1.0"
+"react-use-scrollspy@npm:3.1.1":
+  version: 3.1.1
+  resolution: "react-use-scrollspy@npm:3.1.1"
   dependencies:
     lodash: 4.17.21
   peerDependencies:
     react: ">=16.8.6"
-  checksum: e1826b225a52db6fdd3ec235fc0ffe9e3276113b5eb42eb5d5fade429af9165b546d8efda924c7ba238f929ae67088237fdc5ba26444e619b7403a365a58a4d5
+  checksum: 5033a267f76465b26b56848176ebc224cf5fc0145c9c8ce7aa5896da54c346938ab60e5b1e49fe684fc3187acf431e774a566680e03ddcb10f372956f84d320d
   languageName: node
   linkType: hard
 
