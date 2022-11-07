@@ -443,10 +443,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/lodash@npm:4.14.186":
-  version: 4.14.186
-  resolution: "@types/lodash@npm:4.14.186"
-  checksum: ee0c1368a8100bb6efb88335107473a41928fc307ff1ef4ff1278868ccddba9c04c68c36d1ffe3a0392ef4a956e1955f7de3203ec09df4f1655dd1b88485c549
+"@types/lodash@npm:4.14.188":
+  version: 4.14.188
+  resolution: "@types/lodash@npm:4.14.188"
+  checksum: 89c32f0a18e0da6ae914b430e76b3d0451c4c85b9c838b440c0c9a8d4966c8e2a76dbb30964c7126402856b2997ec56a8c36d8d6461ec14387689ec37594f09f
   languageName: node
   linkType: hard
 
@@ -3955,7 +3955,7 @@ __metadata:
   dependencies:
     "@porscheofficial/eslint-config-porschedigital-react": 2.1.0
     "@porscheofficial/prettier-config-porschedigital": 2.1.0
-    "@types/lodash": 4.14.186
+    "@types/lodash": 4.14.188
     "@types/react": 18.0.21
     babel-eslint: 10.1.0
     cz-conventional-changelog: 3.3.0
