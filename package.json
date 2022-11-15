@@ -43,7 +43,7 @@
   "devDependencies": {
     "@porscheofficial/eslint-config-porschedigital-react": "2.1.0",
     "@porscheofficial/prettier-config-porschedigital": "2.1.0",
-    "@types/lodash": "4.14.186",
+    "@types/lodash": "4.14.189",
     "@types/react": "18.0.21",
     "babel-eslint": "10.1.0",
     "cz-conventional-changelog": "3.3.0",
