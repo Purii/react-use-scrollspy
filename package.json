@@ -41,7 +41,7 @@
     "react": ">=16.8.6"
   },
   "devDependencies": {
-    "@porscheofficial/eslint-config-porschedigital-react": "2.1.0",
+    "@porscheofficial/eslint-config-porschedigital-react": "2.3.0",
     "@porscheofficial/prettier-config-porschedigital": "2.1.0",
     "@types/lodash": "4.14.186",
     "@types/react": "18.0.21",
