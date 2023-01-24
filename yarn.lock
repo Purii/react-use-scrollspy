@@ -385,12 +385,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@porscheofficial/prettier-config-porschedigital@npm:2.1.0":
-  version: 2.1.0
-  resolution: "@porscheofficial/prettier-config-porschedigital@npm:2.1.0"
+"@porscheofficial/prettier-config-porschedigital@npm:2.3.0":
+  version: 2.3.0
+  resolution: "@porscheofficial/prettier-config-porschedigital@npm:2.3.0"
   peerDependencies:
     prettier: "*"
-  checksum: 5fcb3010dc30fc69751b9d339d76670c233df13d5c9ca84a36e1bc2ead4f023dbf34f92ffafcc41632a51e8a94fb9f1c455e7b9688aa5c98682d8168a2c5e72a
+  checksum: cf0c1298a5acbdb1ad3fe7819f2cb5b5be6181e17c228116fc0de0f12128b002ab63601f45c57cd5daf0e24c5f8d5ceb39c560d1b7f0738705a52dcbaf997af6
   languageName: node
   linkType: hard
 
@@ -3954,7 +3954,7 @@ __metadata:
   resolution: "react-use-scrollspy@workspace:."
   dependencies:
     "@porscheofficial/eslint-config-porschedigital-react": 2.1.0
-    "@porscheofficial/prettier-config-porschedigital": 2.1.0
+    "@porscheofficial/prettier-config-porschedigital": 2.3.0
     "@types/lodash": 4.14.186
     "@types/react": 18.0.21
     babel-eslint: 10.1.0
