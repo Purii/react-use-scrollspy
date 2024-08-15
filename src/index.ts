@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useLayoutEffect } from "react";
 import throttle from "lodash/fp/throttle";
 
 export interface useScrollSpyParams {
@@ -35,7 +35,7 @@ export default ({
     setActiveSection(currentSectionId);
   });
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     const scrollable = scrollingElement?.current ?? window;
     scrollable.addEventListener("scroll", handle);
 
